@@ -16,7 +16,7 @@
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
 
-:hammer: Tools
+:gift: Material
 =======
 
 - Github Emoji  
