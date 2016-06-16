@@ -3,7 +3,7 @@
 - IT eBooks :
     http://it-ebooks.info
 
-### Usage
+#### Manual
 - Markdown 语法说明 :
     http://wowubuntu.com/markdown/index.html
 - Sphinx 使用手册 :
@@ -11,13 +11,13 @@
 - 图解git :
     http://marklodato.github.io/visual-git-guide/index-zh-cn.html
 
-### Style Guide
+#### Style Guide
 - Google Style Guide :
     https://github.com/google/styleguide
 - Style Guide for Python Code :
     https://www.python.org/dev/peps/pep-0008/
 
-### Design Pattern
+#### Design Pattern
 - 设计模式 :
     http://www.runoob.com/design-pattern/design-pattern-intro.html
 - 图说设计模式 :
@@ -35,7 +35,7 @@
 - Travis CI :
     https://travis-ci.org
 
-### Web
+#### Web
 - Less :
     http://lesscss.org
 - Can I Use :
@@ -61,7 +61,7 @@
 - Parse :
     https://parse.com
 
-### Security
+#### Security
 - XSS Game :
     https://xss-game.appspot.com
 - Shodan :
@@ -81,19 +81,19 @@
 - Google Design :
     https://design.google.com
 
-### Emoji
+#### Emoji
 - Emojipedia :
     http://emojipedia.org
 - Github Emoji :
     http://www.emoji-cheat-sheet.com
 
-### Photos
+#### Photos
 - Pixabay :
     https://pixabay.com
 - Unsplash :
     https://unsplash.com
 
-### Fonts
+#### Fonts
 - Font Squirrel :
     https://www.fontsquirrel.com
 - Font Awesome :
