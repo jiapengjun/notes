@@ -16,19 +16,6 @@ alias gpl='git pull'
 alias gph='git add .; git commit -m"no comments"; git push'
 alias glg='git log --oneline --abbrev-commit --all --graph --decorate --color'
 
-function plan()
-{
-    if [ $# -eq 1 ] && ([ $1 == 'e' ] || [ $1 == '-e' ]) ;then
-        vi ~/.bash_profile
-        source ~/.bash_profile
-    else
-        echo -e '\033[00;36m'  # Can use "printf" to replace "echo -e"
-        echo 'cancel Unicome service'
-        echo 'rent apartment'
-        echo -e '\033[00m'
-    fi
-}
-
 function usage()
 {
     echo ''
@@ -38,7 +25,7 @@ function usage()
 
     echo '** Package ** : brew, port'
     echo '** Tools **   : git, plutil, diskutil'
-    echo '** Python **  : easy_install, pip, virtualenv, pyenv'
+    echo '** Python **  : easy_install, pip, virtualenv, pyenv, pylint'
     echo '** DNS **     : whois, nslookup, dig'
     echo ''
 }
@@ -62,5 +49,16 @@ function boot()
     sudo reboot 
 }
 
+function plan()
+{
+    if [ $# -eq 1 ] && ([ $1 == 'e' ] || [ $1 == '-e' ]) ;then
+        vi ~/.bash_profile
+        source ~/.bash_profile
+    else
+        echo -e '\033[00;36m'  # Can use "printf" to replace "echo -e"
+        echo 'cancel Unicome service'
+        echo -e '\033[00m'
+    fi
+}
 
 plan
