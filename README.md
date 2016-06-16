@@ -1,4 +1,4 @@
-英文文档
+English Documents
 ========
 
 - Style Guide for Python Code  
@@ -16,7 +16,7 @@
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
 
-Tools
+:hammer: Tools
 =======
 
 - Github Emoji  
