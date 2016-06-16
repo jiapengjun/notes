@@ -1,12 +1,10 @@
 :books: English 
-========
-
+============
 - Style Guide for Python Code  
     https://www.python.org/dev/peps/pep-0008/
 
 :books: 中文
 =========
-
 - 图解git  
     http://marklodato.github.io/visual-git-guide/index-zh-cn.html
 
@@ -15,6 +13,11 @@
 
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
+
+:hammer: Tools
+============
+- Lantern  
+    https://github.com/getlantern/lantern
 
 :gift: Material
 =======
