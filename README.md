@@ -47,8 +47,8 @@
 - JS Bin :
     http://jsbin.com
 - Cloud9 :
-    https://c9.io
-***
+    https://c9.io  
+******
 - Viewport Sizes :
     http://viewportsizes.com
 - Deviceponsive :
