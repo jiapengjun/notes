@@ -40,6 +40,7 @@
     http://lesscss.org
 - Can I Use  
     http://caniuse.com
+
 ---------
 - ES6 Fiddle  
     http://www.es6fiddle.net/
@@ -47,11 +48,13 @@
     http://jsbin.com
 - Cloud9  
     https://c9.io
+
 ---------
 - Viewport Sizes  
     http://viewportsizes.com
 - Deviceponsive  
     http://deviceponsive.com
+
 ---------
 - Firebase  
     https://firebase.google.com
