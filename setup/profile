@@ -1,0 +1,66 @@
+set -o vi
+export PS1='\h@\[\033[00;32m\]\W\[\033[00m\]:\u \$ '
+
+alias ls='ls -GF'
+alias ll='ls -l'
+
+alias func='declare -f'
+#alias func='typeset -f'
+alias ip='curl ipecho.net/plain; echo'
+
+alias ppj='python -m json.tool'
+alias phs='python -m SimpleHTTPServer'
+#alias phs='python3 -m http.server'
+
+alias gpl='git pull'
+alias gph='git add .; git commit -m"no comments"; git push'
+alias glg='git log --oneline --abbrev-commit --all --graph --decorate --color'
+
+function plan()
+{
+    if [ $# -eq 1 ] && ([ $1 == 'e' ] || [ $1 == '-e' ]) ;then
+        vi ~/.bash_profile
+        source ~/.bash_profile
+    else
+        echo -e '\033[00;36m'  # Can use "printf" to replace "echo -e"
+        echo 'cancel Unicome service'
+        echo 'rent apartment'
+        echo -e '\033[00m'
+    fi
+}
+
+function usage()
+{
+    echo ''
+    echo "** ANSI **    : 0[black], 1[red], 2[green], 3[yellow], 4[blue]"
+    echo "** ANSI **    : 5[magenta], 6[Cyan], 7[white]"
+    echo ''
+
+    echo '** Package ** : brew, port'
+    echo '** Tools **   : git, plutil, diskutil'
+    echo '** Python **  : easy_install, pip, virtualenv, pyenv'
+    echo '** DNS **     : whois, nslookup, dig'
+    echo ''
+}
+
+function boot()
+{
+    if [ $# -ne 1 ] ;then
+        echo "Input which OS you want to boot [1: El Captian, 2: Fuji]?"
+        return
+    fi
+
+    if [ $1 -eq 1 ]   ;then
+        sudo bless --mount /Volumes/Glitz --setBoot
+    elif [ $1 -eq 2 ] ;then
+        sudo bless --mount /Volumes/Fuji --setBoot
+    else
+        echo "Wrong choice, abort!"
+        return
+    fi
+
+    sudo reboot 
+}
+
+
+plan

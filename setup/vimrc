@@ -1,0 +1,67 @@
+set nocompatible
+
+set incsearch
+set showmatch
+set smartcase
+set ignorecase
+
+set number
+set linebreak
+set scrolloff=2
+
+set hlsearch
+"set background=dark
+
+set hidden
+set showcmd
+set ruler
+
+set nrformats-=octal
+set backspace=indent,eol,start
+
+set autoindent
+set smartindent
+set expandtab
+set shiftwidth=4
+set softtabstop=4
+set tabstop=4
+set shiftround
+
+set foldmethod=marker
+set foldmarker={{{,}}}
+
+set timeout
+set timeoutlen=1000
+set ttimeoutlen=100
+
+set backup
+if &backupdir =~# '^\.,'
+	let &backupdir = "/Users/pengjun/Library/Vim/backup," . &backupdir
+endif
+
+set swapfile
+if &directory =~# '^\.,'
+    let &directory = "/Users/pengjun/Library/Vim/swap," . &directory
+endif
+
+set wildmenu
+set wildmode=full
+set undofile
+if &undodir =~# '^\.\%(,\|$\)'
+    let &undodir = "/Users/pengjun/Library/Vim/undo," . &undodir
+endif
+
+"set gdefault
+
+colorscheme peachpuff
+filetype plugin indent on
+syntax on
+
+"let mapleader=","
+
+autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exec "normal g'\"" | endif
+
+augroup vimscript
+    autocmd!
+    autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END
