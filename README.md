@@ -17,7 +17,7 @@
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
 
-🔨 Tools
+🛠 Tools
 ==============
 - Lantern  
     https://github.com/getlantern/lantern
