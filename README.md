@@ -32,3 +32,10 @@
 - Github Emoji  
     http://www.emoji-cheat-sheet.com
 
+### Photos
+- Pixabay  
+    https://pixabay.com
+- Unsplash  
+    https://unsplash.com
+
+### Fonts
