@@ -3,7 +3,7 @@
 - IT eBooks :
     http://it-ebooks.info
 
-#### Manual
+#### Tools
 - Markdown 语法说明 :
     http://wowubuntu.com/markdown/index.html
 - Sphinx 使用手册 :
@@ -11,13 +11,15 @@
 - 图解git :
     http://marklodato.github.io/visual-git-guide/index-zh-cn.html
 
-#### Style Guide
+#### Development
 - Google Style Guide :
     https://github.com/google/styleguide
 - Style Guide for Python Code :
     https://www.python.org/dev/peps/pep-0008/
+- Write Python 2-3 compatible code :
+    http://python-future.org/compatible_idioms.html
 
-#### Design Pattern
+-------------
 - 设计模式 :
     http://www.runoob.com/design-pattern/design-pattern-intro.html
 - 图说设计模式 :
@@ -49,7 +51,7 @@
 - Cloud9 :
     https://c9.io
 
-******
+---------
 - Viewport Sizes :
     http://viewportsizes.com
 - Deviceponsive :
