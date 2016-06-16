@@ -25,10 +25,12 @@
 🎁 Material
 ==============
 
+- Google Design  
+https://design.google.com
+
 ### Emoji
 - Emojipedia  
     http://emojipedia.org
-
 - Github Emoji  
     http://www.emoji-cheat-sheet.com
 
@@ -39,3 +41,7 @@
     https://unsplash.com
 
 ### Fonts
+- Font Squirrel  
+    https://www.fontsquirrel.com
+- Font Awesome  
+    http://fontawesome.io
