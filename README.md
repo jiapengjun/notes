@@ -20,4 +20,4 @@ Tools
 =======
 
 - Github Emoji  
-    https://github.com/scotch-io/All-Github-Emoji-Icons
+    http://www.emoji-cheat-sheet.com
