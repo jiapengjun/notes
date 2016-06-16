@@ -7,6 +7,9 @@
     virtualenv proj01
     source ./proj01/bin/activate
 
+### Debug
+    python -m pdb test.py
+
 ### Fibonacci numbers in one line
     #from functools import reduce
     fib=lambda n:reduce(lambda x,y:(x[0]+x[1],x[0]),[(1,1)]*(n-2))[0]
