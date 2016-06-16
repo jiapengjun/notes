@@ -49,7 +49,6 @@
 - Cloud9 :
     https://c9.io
 
----------
 - Viewport Sizes :
     http://viewportsizes.com
 - Deviceponsive :
