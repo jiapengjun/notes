@@ -23,9 +23,9 @@ function usage()
     echo "** ANSI **    : 5[magenta], 6[Cyan], 7[white]"
     echo ''
 
-    echo '** Package ** : brew, port'
+    echo '** Package ** : brew, port, pip[python], npm[nodejs]'
     echo '** Tools **   : git, plutil, diskutil'
-    echo '** Python **  : easy_install, pip, virtualenv, pyenv, pylint'
+    echo '** Python **  : easy_install, virtualenv, pyenv, pylint'
     echo '** DNS **     : whois, nslookup, dig'
     echo ''
 }
