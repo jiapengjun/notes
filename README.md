@@ -1,3 +1,6 @@
+- IT eBooks  
+    http://it-ebooks.info
+
 📚 English 
 ==============
 - Google Style Guide  
@@ -16,6 +19,11 @@
 
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
+
+- 设计模式   
+    http://www.runoob.com/design-pattern/design-pattern-intro.html
+
+- 
 
 🛠 Tools
 ==============
