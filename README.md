@@ -1,10 +1,10 @@
-English Documents
+:notebook: English Documents
 ========
 
 - Style Guide for Python Code  
     https://www.python.org/dev/peps/pep-0008/
 
-中文文档
+:notebook: 中文文档
 =========
 
 - 图解git  
