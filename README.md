@@ -19,9 +19,8 @@
 - Lantern  
     https://github.com/getlantern/lantern
 
-:gift: Material 🍌
+:gift: Material
 ==============
 - Github Emoji  
     http://www.emoji-cheat-sheet.com
 
-- Apple 🍎
