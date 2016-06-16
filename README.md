@@ -24,6 +24,9 @@
 
 🎁 Material
 ==============
+- Emojipedia  
+    http://emojipedia.org
+
 - Github Emoji  
     http://www.emoji-cheat-sheet.com
 
