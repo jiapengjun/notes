@@ -18,6 +18,3 @@
     ctrl = webbrowser.get('open -a /Applications/Google\ Chrome.app %s')
     ctrl.open('http://www.python.org')
 
-### Calendar
-    import calendar
-    print calendar.calendar(2015)
