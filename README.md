@@ -14,12 +14,12 @@
 - Sphinx 使用手册  
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
 
-:hammer: Tools
+🔨 Tools
 ==============
 - Lantern  
     https://github.com/getlantern/lantern
 
-:gift: Material
+🎁 Material
 ==============
 - Github Emoji  
     http://www.emoji-cheat-sheet.com
