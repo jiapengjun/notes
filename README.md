@@ -20,6 +20,8 @@
     http://python-future.org/compatible_idioms.html
 
 -------------
+- Algorithms and Data Structures :
+    http://interactivepython.org/courselib/static/pythonds/index.html
 - 设计模式 :
     http://www.runoob.com/design-pattern/design-pattern-intro.html
 - 图说设计模式 :
