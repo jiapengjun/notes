@@ -43,12 +43,12 @@
 
 ---------
 - ES6 Fiddle :
-    http://www.es6fiddle.net/
+    http://www.es6fiddle.net
 - JS Bin :
     http://jsbin.com
 - Cloud9 :
     https://c9.io
-
+***
 - Viewport Sizes :
     http://viewportsizes.com
 - Deviceponsive :
