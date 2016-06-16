@@ -1,10 +1,10 @@
-:books: English Docs
+:books: English 
 ========
 
 - Style Guide for Python Code  
     https://www.python.org/dev/peps/pep-0008/
 
-:books: Chinese Docs
+:books: 中文
 =========
 
 - 图解git  
