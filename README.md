@@ -39,20 +39,20 @@
 - Less  
     http://lesscss.org
 - Can I Use  
-    http://caniuse.com  
-
+    http://caniuse.com
+---------
 - ES6 Fiddle  
     http://www.es6fiddle.net/
 - JS Bin  
     http://jsbin.com
-- Cloud9
-    https://c9.io  
-
+- Cloud9  
+    https://c9.io
+---------
 - Viewport Sizes  
     http://viewportsizes.com
 - Deviceponsive  
-    http://deviceponsive.com  
-
+    http://deviceponsive.com
+---------
 - Firebase  
     https://firebase.google.com
 - Parse  
