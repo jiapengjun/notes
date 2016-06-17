@@ -10,6 +10,8 @@
     http://zh-sphinx-doc.readthedocs.io/en/latest/index.html
 - 图解git :
     http://marklodato.github.io/visual-git-guide/index-zh-cn.html
+- Keynote :
+    http://keynoteunlocked.com
 
 ### Development
 - Google Style Guide :
