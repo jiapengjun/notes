@@ -28,7 +28,7 @@
     http://design-patterns.readthedocs.io/zh_CN/latest/index.html
 
 
-🛠📚 Tools
+🛠 Tools
 ==============
 - Lantern :
     https://github.com/getlantern/lantern
