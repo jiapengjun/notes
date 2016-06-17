@@ -3,7 +3,7 @@
 - IT eBooks :
     http://it-ebooks.info
 
-#### Tools
+### Tools
 - Markdown 语法说明 :
     http://wowubuntu.com/markdown/index.html
 - Sphinx 使用手册 :
@@ -11,7 +11,7 @@
 - 图解git :
     http://marklodato.github.io/visual-git-guide/index-zh-cn.html
 
-#### Development
+### Development
 - Google Style Guide :
     https://github.com/google/styleguide
 - Style Guide for Python Code :
@@ -19,7 +19,7 @@
 - Write Python 2-3 compatible code :
     http://python-future.org/compatible_idioms.html
 
--------------
+#####
 - Algorithms and Data Structures :
     http://interactivepython.org/courselib/static/pythonds/index.html
 - 设计模式 :
@@ -39,13 +39,13 @@
 - Travis CI :
     https://travis-ci.org
 
-#### Web, Mobile
+### Web, Mobile
 - Less :
     http://lesscss.org
 - Can I Use :
     http://caniuse.com
 
----------
+#####
 - ES6 Fiddle :
     http://www.es6fiddle.net
 - JS Bin :
@@ -55,19 +55,19 @@
 - CodeKit :
     https://incident57.com/codekit
 
----------
+#####
 - Viewport Sizes :
     http://viewportsizes.com
 - Deviceponsive :
     http://deviceponsive.com
 
----------
+#####
 - Firebase :
     https://firebase.google.com
 - Parse :
     https://parse.com
 
-#### Security
+### Security
 - XSS Game :
     https://xss-game.appspot.com
 - Shodan :
@@ -87,19 +87,19 @@
 - Google Design :
     https://design.google.com
 
-#### Emoji
+### Emoji
 - Emojipedia :
     http://emojipedia.org
 - Github Emoji :
     http://www.emoji-cheat-sheet.com
 
-#### Photos
+### Photos
 - Pixabay :
     https://pixabay.com
 - Unsplash :
     https://unsplash.com
 
-#### Fonts
+### Fonts
 - Font Squirrel :
     https://www.fontsquirrel.com
 - Font Awesome :
