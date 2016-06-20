@@ -16,6 +16,8 @@
 ### Development
 - Google Style Guide :
     https://github.com/google/styleguide
+- Frontend Guidelines :
+    https://github.com/bendc/frontend-guidelines
 - Style Guide for Python Code :
     https://www.python.org/dev/peps/pep-0008/
 - Write Python 2-3 compatible code :
