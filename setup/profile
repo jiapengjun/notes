@@ -24,7 +24,7 @@ function usage()
     echo ''
 
     echo '** Package ** : brew, port, pip[python], gem[ruby], npm[nodejs]'
-    echo '** Tools **   : git, plutil, diskutil'
+    echo '** Tools **   : git, plutil, diskutil, opensnoop'
     echo '** Python **  : easy_install, virtualenv, pyenv, pylint'
     echo '** DNS **     : whois, nslookup, dig'
     echo ''
