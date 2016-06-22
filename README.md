@@ -82,6 +82,8 @@
     http://sparta.secforce.com
 - Google Hacking Database :
     https://www.exploit-db.com/google-hacking-database
+- Phrack :
+    http://phrack.org
 
 
 🎁 Material
