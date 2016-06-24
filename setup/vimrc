@@ -65,3 +65,6 @@ augroup vimscript
     autocmd!
     autocmd BufWritePost $MYVIMRC source $MYVIMRC
 augroup END
+
+" Python
+autocmd FileType python set foldmethod=indent
