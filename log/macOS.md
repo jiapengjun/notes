@@ -10,3 +10,5 @@
     split -b 1024m big_file
     cat xa*  > new_big_file
 
+### Show ".file" in Finder.
+    defaults write com.apple.finder AppleShowAllFiles YES
