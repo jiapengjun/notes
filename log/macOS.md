@@ -19,3 +19,19 @@
     on server:
         cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
         chmod 600 ~/.ssh/authorized_keys
+
+### Kerberos login
+    ktutil -k pjia.keytab add  -p user@server -e des3-cbc-sha1 -V9
+    kinit -k -t pjia.keytab user@server
+    klist --list-all
+
+### Crontab to Launchctl
+    15 6 * * * /path/to/run
+
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>6</integer>
+        <key>Minute</key>
+        <integer>15</integer>
+    </dict>
