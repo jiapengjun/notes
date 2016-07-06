@@ -25,7 +25,7 @@
     kinit -k -t pjia.keytab user@server
     klist --list-all
 
-### Crontab to Launchctl
+### Crontab -> Launchctl
     15 6 * * * /path/to/run
 
     <key>StartCalendarInterval</key>
