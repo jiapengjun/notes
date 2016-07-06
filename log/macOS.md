@@ -21,8 +21,8 @@
         chmod 600 ~/.ssh/authorized_keys
 
 ### Kerberos login
-    ktutil -k pjia.keytab add  -p user@server -e des3-cbc-sha1 -V9
-    kinit -k -t pjia.keytab user@server
+    ktutil -k user.keytab add  -p user@server -e des3-cbc-sha1 -V9
+    kinit -k -t user.keytab user@server
     klist --list-all
 
 ### Crontab -> Launchctl
