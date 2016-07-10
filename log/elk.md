@@ -10,7 +10,7 @@ Elasticsearch vs Database
 Elastalert
 ====================
 
-### Rules (type: )
+### Rule (type: )
     any:
     blacklist:      compare_key blacklist
     whitelist:      compare_key whitelist ignore_null(true|false)
