@@ -12,6 +12,10 @@
 
 ### Show ".file" in Finder
     defaults write com.apple.finder AppleShowAllFiles YES
+    or
+    defaults write com.apple.finder AppleShowAllFiles -bool true
+
+    killall Finder
 
 ### SSH auto login without password
     on client:
