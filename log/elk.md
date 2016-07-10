@@ -29,7 +29,6 @@ Elastalert
         - terms:        ->field: [value1, value2...]
         - wildcard:     ->field: "str1*str2"
         - range:        ->status_code:  ->from:
-                                        ->to:
 
     ### loading filter directyly from kibana 3
     download_dashboard: "My Dashboard Name"
