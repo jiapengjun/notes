@@ -10,7 +10,7 @@ Elasticsearch vs Database
 Elastalert
 ====================
 
-*** Rules (type: )
+### Rules (type: )
     any:
     blacklist:      compare_key blacklist
     whitelist:      compare_key whitelist ignore_null(true|false)
@@ -22,7 +22,7 @@ Elastalert
     cardinality:    cardinality_field min_cardinality|max_cardinality
                     timeframe
 
-*** Filter (filter: )
+### Filter (filter: )
     - not|and|or  
         - query:        ->query_string:  ->query:
         - term:         ->field: value
