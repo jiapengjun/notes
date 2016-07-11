@@ -39,3 +39,7 @@
         <key>Minute</key>
         <integer>15</integer>
     </dict>
+
+### Download Documents
+    wget -c -r -np -k -L -p  /path/to/index.html
+    
