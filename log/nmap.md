@@ -6,3 +6,6 @@ Scan OS info:
 
 Scan service/version:
     nmap -sV 192.168.1.111
+
+Create 10000 random ip addr:
+    nmap -iR 10000 -sL -n

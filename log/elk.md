@@ -1,14 +1,44 @@
 Elasticsearch vs Database
 =============================
-    index      ==> db
-    type       ==> table/collection
-    id         ==> record/document
+    index(indice)       ==> db
+    type                ==> table/collection
+    id                  ==> record/document
+    field               ==> column
 
-    field      ==> column
-    item       ==> value
+    shards              ==> partitions
+    replicas            ==> failover
 
-    shards     ==> partitions
-    replicas   ==> failover
+### API:
+    _cat
+    _plugin
+
+    _mget
+    _bulk
+    _reindex
+    _mtermvectors
+
+    _create
+    _update
+    _search     
+        size
+        from
+        sort
+            order:      asc, desc
+            mode:       min, max, avg, sum, median
+            missing:    _first, _last
+        query
+            match_all
+            match
+            match_phrase
+            bool
+                should
+                must
+                must_not
+                filter
+                    range
+        aggs
+        _source: false, include/exclude, [field1, field2...]
+        fields:  [field1, field2...]
 
 Elastalert
 ====================
@@ -17,11 +47,11 @@ Elastalert
     any:
     blacklist:      compare_key blacklist
     whitelist:      compare_key whitelist ignore_null(true|false)
+    new_item:       fields
     change:         compare_key query_key ignore_null(true|false)
     frequency:      num_events timeframe
     flatline:       threshold timeframe
     spike:          spike_height spike_type(up|down|both) timeframe
-    new_item:       fields
     cardinality:    cardinality_field min_cardinality|max_cardinality
                     timeframe
 
