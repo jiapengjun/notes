@@ -7,6 +7,9 @@ Elasticsearch vs Database
     field      ==> column
     item       ==> value
 
+    shards     ==> partitions
+    replicas   ==> failover
+
 Elastalert
 ====================
 
