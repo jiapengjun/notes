@@ -43,3 +43,7 @@
 ### Download Documents
     wget -c -r -np -k -L -p  /path/to/index.html
     
+
+### Base64 Encode/Decode
+    base64 macos.MD > /tmp/output
+    base64 -D /tmp/output

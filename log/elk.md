@@ -40,6 +40,47 @@ Elasticsearch vs Database
         _source: false, include/exclude, [field1, field2...]
         fields:  [field1, field2...]
 
+### Query DSL:
+    Use query clauses in query context for conditions which should affect the score of matching documents (i.e. how well does the document match), and use all other query clauses in filter context.
+
+    Match All Query:    { "match_all": {} }, { "match_all": {"boost": 1.2 }}
+    Full text queries: 
+        Match Query:    
+            { "match": { "message": "this is a test" }}
+            { "match": { 
+                "message": { 
+                    "query": "this is a test", 
+                    "operator": "and" 
+                    }
+                }
+            }
+            { "match_phrase" : { 
+                "message" : { 
+                    "query" : "this is a test", 
+                    "analyzer" : "my_analyzer" 
+                    }
+                }
+            }
+            { "match_phrase_prefix" : { "message" : "quick brown f" }}
+        Multi Match Query:
+            { "multi_match" : { 
+                    "query":    "this is a test", 
+                    "fields": [ "subject", "message" ] 
+                }
+            }
+            { "multi_match" : {
+                    "query":    "Will Smith",
+                    "fields": [ "title", "*_name" ] 
+                }
+            }
+            {
+                "multi_match" : {
+                    "query" : "this is a test",
+                    "fields" : [ "subject^3", "message" ] 
+                  }
+            }
+
+
 Elastalert
 ====================
 
