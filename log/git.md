@@ -19,10 +19,10 @@ git branch pjia_brh
 
 
 # DELETE BRANCH
-git branch -d pjia_brh          ## remove local branch
+git branch -d pjia_brh          ## remove local branch  
 git branch --delete pjia_brh
 
-git push origin :pjia_brh       ## remove remote branch
+git push origin :pjia_brh       ## remove remote branch  
 git push origin --delete pjia_brh
 # on other machines
 git fetch --all --prune
