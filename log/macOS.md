@@ -27,8 +27,8 @@
 ### SSH host alias
     $ cat ~/.ssh/config
     Host  elk
-        HostName 17.87.18.191
-        User mapschina
+        HostName 192.168.1.168
+        User jiapj
 
     $ ssh elk
 
