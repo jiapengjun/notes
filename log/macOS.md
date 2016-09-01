@@ -24,6 +24,14 @@
         cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
         chmod 600 ~/.ssh/authorized_keys
 
+### SSH host alias
+    $ cat ~/.ssh/config
+    Host  elk
+        HostName 17.87.18.191
+        User mapschina
+
+    $ ssh elk
+
 ### Kerberos login
     ktutil -k user.keytab add  -p user@server -e des3-cbc-sha1 -V9
     kinit -k -t user.keytab user@server
