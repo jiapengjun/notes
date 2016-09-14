@@ -1,4 +1,4 @@
-Brew:
+Brew(macOS):
     brew update
     brew upgrade --cleanup
 
@@ -8,7 +8,7 @@ Brew:
 
     brew leaves
 
-MacPort:
+MacPort(macOS):
     port selfupdate
     port -u upgrade outdated
     
@@ -18,3 +18,10 @@ MacPort:
 
     port list requested
     port contents PKG
+
+apt-get(linux):
+yum(linux):
+
+pip(python):
+gem(ruby):
+npm(node):
