@@ -3,6 +3,14 @@ export PS1='\h@\[\033[00;32m\]\W\[\033[00m\]:\u \$ '
 
 alias ls='ls -GF'
 alias ll='ls -l'
+alias prthex='printf "%08x\n" '
+function prtbin()
+{
+    for i in $*
+    do
+        echo "obase=2;$i" |bc
+    done
+}
 
 alias func='declare -f'
 #alias func='typeset -f'
