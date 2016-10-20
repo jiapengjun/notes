@@ -38,6 +38,23 @@ function usage()
     echo ''
 }
 
+function OSReinstall() {
+    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+    brew install pstree
+    brew install mongodb
+    brew install nmap
+
+    brew install mpv
+    brew install youtube-dl
+
+    brew install python
+        pip install virtualenv
+
+    brew update
+    brew upgrade --cleanup
+}
+
 function boot()
 {
     if [ $# -ne 1 ] ;then
