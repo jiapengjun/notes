@@ -49,3 +49,8 @@ git remote add origin jiapengjun@github.com:jiapengjun/notes.git
 git push -u origin master
 
 git clone jiapengjun@github.com:jiapengjun/notes.git
+
+git checkout -b dev
+git checkout master
+git merge dev
+git branch -d dev
