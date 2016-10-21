@@ -26,3 +26,18 @@ git push origin :pjia_brh       ## remove remote branch
 git push origin --delete pjia_brh
 # on other machines
 git fetch --all --prune
+
+
+# Tutorial:
+git init
+git add readme.txt
+git commit -m"write a readme file"
+
+git status
+git diff readme.txt
+
+git log
+git reset --hard HEAD^
+gir reflog
+git reset --hard commit_id
+
