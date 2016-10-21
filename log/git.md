@@ -55,4 +55,4 @@ git checkout master
 git merge dev
 git branch -d dev
 
-add in master
+add in master/branch
