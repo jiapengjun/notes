@@ -26,3 +26,7 @@ git push origin :pjia_brh       ## remove remote branch
 git push origin --delete pjia_brh
 # on other machines
 git fetch --all --prune
+
+sajgla 
+gajslga
+gjalk
