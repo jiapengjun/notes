@@ -41,3 +41,11 @@ git reset --hard HEAD^
 gir reflog
 git reset --hard commit_id
 
+git diff HEAD -- readme.txt
+git checkout -- readme.txt
+git reset HEAD readme.txt
+
+git remote add origin jiapengjun@github.com:jiapengjun/notes.git
+git push -u origin master
+
+git clone jiapengjun@github.com:jiapengjun/notes.git
