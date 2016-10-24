@@ -1,0 +1,26 @@
+var xxx = React.createClass({
+
+    propTypes: { aaa: React.PropTypes.string.isRequired }
+
+    getDefaultProps : function() {
+        return { aaa: 'Hello World' };
+    }
+
+    getInitialState: function() { 
+        return { bbb: false };
+    }
+
+    this.props.aaa
+    this.state.bbb
+
+    this.props.children 
+    this.refs.ccc
+
+    componentWillMount()
+    componentDidMount()
+    componentWillUpdate(object nextProps, object nextState)
+    componentDidUpdate(object prevProps, object prevState)
+    componentWillUnmount()
+
+    render: function() { ... }
+}
