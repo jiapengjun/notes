@@ -50,6 +50,7 @@ function OSReinstall() {
 
     brew install python
         pip install virtualenv
+        pip install scrapy
 
     brew update
     brew upgrade --cleanup
