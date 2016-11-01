@@ -47,6 +47,8 @@
     https://travis-ci.org
 - Alternative To :
     http://alternativeto.net
+- Slides :
+    https://slides.com
 
 ### Web, Mobile
 - Less :
