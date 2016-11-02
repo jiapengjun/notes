@@ -52,6 +52,11 @@ function OSReinstall() {
         pip install virtualenv
         pip install scrapy
 
+    brew install node --with-full-icu
+    brew install swift
+    brew install go
+    brew install lua
+
     brew update
     brew upgrade --cleanup
 }
