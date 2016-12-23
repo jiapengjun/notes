@@ -1,3 +1,6 @@
+### run shell step by step
+    trap read debug
+
 ### Get disk UUID
     diskutil info /Volumes/Fuji
 
