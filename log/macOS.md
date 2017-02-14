@@ -18,6 +18,8 @@
     killall Finder
 
 ### SSH auto login without password
+    avoid input passphrase:
+        ssh-add ~/.ssh/id_rsa
     on client:
         scp ~/.ssh/id_rsa.pub  user@server:/tmp/
     on server:
