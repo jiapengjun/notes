@@ -1,6 +1,10 @@
 set -o vi
 export PS1='\h@\[\033[00;32m\]\W\[\033[00m\]:\u \$ '
 
+export HISTCONTROL=ignoreboth
+export HISTFILESIZE=2000
+export HISTIGNORE='ls:man:pwd:history'
+
 alias ls='ls -GF'
 alias ll='ls -l'
 alias prthex='printf "%08x\n" '
