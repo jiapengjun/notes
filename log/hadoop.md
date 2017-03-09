@@ -21,3 +21,10 @@
 ### Compression
     reduce the storage
     speed up transfer (network, disk)
+
+# Hive
+### managed table vs external table
+   drop external table doesn't remove data file.
+
+### Partition and Bucket
+    

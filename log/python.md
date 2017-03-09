@@ -10,5 +10,14 @@
 ### Debug
     python -m pdb test.py
 
+### Debug (in function)
+    import pdb; pdb.set_trace()
+
 ### Pylint
     pylint --const-rgx='[a-z_][a-z0-9_]{1,30}$' test.py
+
+### Preamble
+    #!/usr/bin/env python
+    from __future__ import unicode_literals
+    from textwrap import dedent as textwrap_dedent
+
