@@ -18,11 +18,18 @@
     killall Finder
 
 ### SSH auto login without password
-    avoid input passphrase:
+    avoid input passphrase(temperary):
         ssh-add ~/.ssh/id_rsa
-    on client:
-        scp ~/.ssh/id_rsa.pub  user@server:/tmp/
-    on server:
+    avoid input passphrase(parmanent):
+        #### add these lines to ~/.ssh/config
+        Host *
+            UseKeychain yes
+            AddKeysToAgent yes
+            IdentityFile ~/.ssh/id_rsa
+
+    on local:
+        scp ~/.ssh/id_rsa.pub  user@remote:/tmp/
+    on remote:
         cat /tmp/id_rsa.pub >> ~/.ssh/authorized_keys
         chmod 600 ~/.ssh/authorized_keys
 
@@ -53,7 +60,11 @@
 ### Download Documents
     wget -c -r -np -k -L -p  /path/to/index.html
     
-
 ### Base64 Encode/Decode
     base64 macos.MD > /tmp/output
     base64 -D /tmp/output
+
+### List all application using port 80
+    sudo lsof -i :80
+
+
