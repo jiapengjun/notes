@@ -18,7 +18,8 @@ function prtbin()
 
 alias func='declare -f'
 #alias func='typeset -f'
-alias ip='curl ipecho.net/plain; echo'
+alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
+#alias ip='curl ipecho.net/plain; echo'
 
 #alias ppj='python -m json.tool'
 alias ppj='python -c'"'"'import fileinput, json; print(json.dumps(json.loads("".join(fileinput.input())),sort_keys=True, indent=4, ensure_ascii=False))'"'"''
