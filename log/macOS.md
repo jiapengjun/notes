@@ -6,9 +6,6 @@
     Utilities -> Terminal, input: csrutil disable
     Reboot
 
-### Split & Merge big size file
-    split -b 1024m big_file
-    cat xa*  > new_big_file
 
 ### Show ".file" in Finder
     defaults write com.apple.finder AppleShowAllFiles YES
@@ -60,11 +57,3 @@
 ### Download Documents
     wget -c -r -np -k -L -p  /path/to/index.html
     
-### Base64 Encode/Decode
-    base64 macos.MD > /tmp/output
-    base64 -D /tmp/output
-
-### List all application using port 80
-    sudo lsof -i :80
-
-
