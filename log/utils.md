@@ -19,3 +19,7 @@
 
 ### list all application using port 80
     sudo lsof -i :80
+
+### rainbows and unicorns in your console
+    brew install lolcat
+    lolcat ./readme.MD
