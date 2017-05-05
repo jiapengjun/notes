@@ -27,3 +27,9 @@
 ### string replace
     str="white horse is not horse"
     echo ${str//horse/cow}
+
+### read lines from multiple files.
+    while read line
+    do
+        echo $line
+    done < <(cat *.sh)
