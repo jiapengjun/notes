@@ -57,3 +57,5 @@
 ### Download Documents
     wget -c -r -np -k -L -p  /path/to/index.html
     
+### Convert plist to json
+    plutil -convert json -o Data.json Data.plist
