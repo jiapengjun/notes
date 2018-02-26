@@ -13,6 +13,9 @@
 ### Debug (in function)
     import pdb; pdb.set_trace()
 
+### yapf
+    yapf test.py > test_fmt.py
+
 ### Pylint
     pylint --const-rgx='[a-z_][a-z0-9_]{1,30}$' test.py
 
