@@ -59,3 +59,6 @@
     
 ### Convert plist to json
     plutil -convert json -o Data.json Data.plist
+
+### Convert man page to pdf
+     man -t expect |pstopdf -i -o ./expect.pdf
