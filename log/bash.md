@@ -33,3 +33,9 @@
     do
         echo $line
     done < <(cat *.sh)
+
+### convert base36 to decimal
+    echo $((36#6CENY0N))
+
+### float calculate
+    bc <<< "scale=3; 2/3"
