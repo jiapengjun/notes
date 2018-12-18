@@ -36,3 +36,8 @@
 ### Send mail
     echo "this is content" | mail -s "this is title" EMAIL_ADDR
 
+### Modify recipient address
+    /etc/postfix/main.cf: smtp_generic_maps = hash:/etc/postfix/generic
+    /etc/postfix/generic: his@localdomain.local  hisaccount@hisisp.example
+    sudo postmap generic
+    sudo postfix reload
