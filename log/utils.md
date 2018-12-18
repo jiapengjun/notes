@@ -23,3 +23,16 @@
 ### rainbows and unicorns in your console
     brew install lolcat
     lolcat ./readme.MD
+
+### SMTP command
+    telnet localhost 25
+    mail from: my@mail.addr
+    rcpt to: your@mail.addr
+    data
+    this is a test
+    .
+    quit
+
+### Send mail
+    echo "this is content" | mail -s "this is title" EMAIL_ADDR
+
