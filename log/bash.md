@@ -28,14 +28,21 @@
     str="white horse is not horse"
     echo ${str//horse/cow}
 
+### convert base36 to decimal
+    echo $((36#6CENY0N))
+
+### float calculate
+    bc <<< "scale=3; 2/3"
+
+### read multiple values from one line
+    while IFS=$':' read name _ id gid fullName home shell
+    do
+        echo $name, $fullName, $home
+    done < /etc/passwd
+
 ### read lines from multiple files.
     while read line
     do
         echo $line
     done < <(cat *.sh)
 
-### convert base36 to decimal
-    echo $((36#6CENY0N))
-
-### float calculate
-    bc <<< "scale=3; 2/3"
