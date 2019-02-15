@@ -7,6 +7,8 @@ export HISTIGNORE='ls:man:pwd:history'
 
 alias ls='ls -GF'
 alias ll='ls -l'
+alias cclear="clear && printf '\e[3J'"
+alias prtoct='printf "%08o\n" '
 alias prthex='printf "%08x\n" '
 function prtbin()
 {
@@ -16,6 +18,14 @@ function prtbin()
     done
 }
 
+function prtb36()
+{
+    BASE36=($(echo {0..9} {A..Z}))
+    for i in $(bc <<< "obase=36; $1"); do
+        echo -n ${BASE36[$(( 10#$i ))]}
+    done && echo
+}
+
 alias func='declare -f'
 #alias func='typeset -f'
 alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
@@ -23,11 +33,12 @@ alias ip='dig +short myip.opendns.com @resolver1.opendns.com'
 
 #alias ppj='python -m json.tool'
 alias ppj='python -c'"'"'import fileinput, json; print(json.dumps(json.loads("".join(fileinput.input())),sort_keys=True, indent=4, ensure_ascii=False))'"'"''
+alias ppc='perl -pe '"'"'s[\\(?:([0-7]{1,3})|(.))] [defined($1) ? chr(oct($1)) : $2]eg'"'"''
 
 #alias phs='python3 -m http.server'
 alias phs='python -m SimpleHTTPServer'
 
-alias gpl='git pull'
+alias gpl='git pull; git submodule foreach git pull origin master'
 alias gph='git add .; git commit -m"no comments"; git push'
 alias glg='git log --oneline --abbrev-commit --all --graph --decorate --color'
 
