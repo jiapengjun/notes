@@ -1,3 +1,7 @@
+### Get hardware/software info
+    system_profiler  SPHardwareDataType 
+    system_profiler  SPSoftwareDataType
+
 ### Get disk UUID
     diskutil info /Volumes/Fuji
 
