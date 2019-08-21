@@ -5,6 +5,9 @@ git pull
 # RUN ONCE.
 git branch pjia_brh
 
+# Check the password location
+git config credential.helper
+
 # RUN EACH UPDATE.
     git checkout pjia_brh
     git fetch

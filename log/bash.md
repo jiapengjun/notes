@@ -28,8 +28,11 @@
     str="white horse is not horse"
     echo ${str//horse/cow}
 
-### convert base36 to decimal
-    echo $((36#6CENY0N))
+### convert number base.
+    echo $((16#FF))         ## 255
+    bc <<<"obase=16;255"    ## FF
+    echo $((36#AZ))         ## 395
+    bc <<<"obase=36;395"    ## 10 35
 
 ### float calculate
     bc <<< "scale=3; 2/3"
