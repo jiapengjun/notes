@@ -7,8 +7,7 @@
 
     # or assign if not set
     name=$1
-    name=${name:="default"}
-    echo $name
+    echo $name ${name:="default"} $name
 
 ### num compare
     if [ $num -eq 10 ]; then ...
