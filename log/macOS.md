@@ -66,3 +66,6 @@
 
 ### Convert man page to pdf
      man -t expect |pstopdf -i -o ./expect.pdf
+
+### DNS lookup
+    host -l DOMAIN.NAME
