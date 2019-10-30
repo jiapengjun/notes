@@ -42,13 +42,13 @@
         echo $name, $fullName, $home
     done < /etc/passwd
 
-### read lines from multiple files.
+### read lines from multiple files
     while read line
     do
         echo $line
     done < <(cat *.sh)
 
-### for in range
+### for in range(n)
     for i in {1..10}
     do
         echo $i
