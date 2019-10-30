@@ -48,3 +48,8 @@
         echo $line
     done < <(cat *.sh)
 
+### for in range
+    for i in {1..10}
+    do
+        echo $i
+    done 
