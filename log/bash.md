@@ -49,7 +49,9 @@
     done < <(cat *.sh)
 
 ### for in range(n)
-    for i in {1..10}
+    for ((i=1; i<=10; i++)) # variable supported
+    for i in $(seq 1 10)    # variable supported
+    for i in {1..10}        # variable not supported
     do
         echo $i
     done 
