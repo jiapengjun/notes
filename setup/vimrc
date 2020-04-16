@@ -2,6 +2,9 @@ set nocompatible
 " new add here
 set cryptmethod=blowfish2
 
+"set autochdir
+set tags+=../tags,../../tags,../../../tags
+
 set incsearch
 set showmatch
 set smartcase
@@ -38,19 +41,19 @@ set ttimeoutlen=100
 
 set backup
 if &backupdir =~# '^\.,'
-	let &backupdir = "/Users/pengjun/Library/Vim/backup," . &backupdir
+	let &backupdir = "/Users/pengjunjia/Library/Vim/backup," . &backupdir
 endif
 
 set swapfile
 if &directory =~# '^\.,'
-    let &directory = "/Users/pengjun/Library/Vim/swap," . &directory
+    let &directory = "/Users/pengjunjia/Library/Vim/swap," . &directory
 endif
 
 set wildmenu
 set wildmode=full
 set undofile
 if &undodir =~# '^\.\%(,\|$\)'
-    let &undodir = "/Users/pengjun/Library/Vim/undo," . &undodir
+    let &undodir = "/Users/pengjunjia/Library/Vim/undo," . &undodir
 endif
 
 "set gdefault
@@ -94,3 +97,5 @@ autocmd FileType javascript call JavaScriptFold()
 
 " All fold is open
 set foldlevelstart=10
+
+au BufReadPost *.json-lpr set syntax=json
