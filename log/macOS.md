@@ -69,3 +69,6 @@
 
 ### DNS lookup
     host -l DOMAIN.NAME
+
+### Run command Parallel
+    echo 10 20 30  |xargs -n 1 -P 3 sleep 
