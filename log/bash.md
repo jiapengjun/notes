@@ -55,3 +55,35 @@
     do
         echo $i
     done 
+
+### Interact with user
+    PS3='Please choose the train: '
+    options=("Azul" "AzulSeed" "Hunter" "HunterSeed")
+    select opt in "${options[@]}"
+    do
+        case $opt in
+            "Azul"|"AzulSeed"|"Hunter"|"HunterSeed")
+                train=${opt}
+                break
+                ;;
+            *)echo "Invalid $REPLY, try again"
+        esac
+    done
+
+    PS3='Please choose the override mode: '
+    options=("upgrade" "erase")
+    select opt in "${options[@]}"
+    do
+        case $opt in
+            "upgrade"|"erase")
+                override=$((REPLY - 1))
+                break
+                ;;
+            *) echo "Invalid $REPLY, try again"
+        esac
+    done
+
+    read -p "Enter version [latest]: " version
+    version=${version:-latest}
+
+    echo $train $override $version
