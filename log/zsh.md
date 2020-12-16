@@ -1,7 +1,7 @@
 ### Emulate sh or ksh
     if [ -n "$ZSH_VERSION" ]; then emulate -L ksh; fi
 
-### For word in strings
+### For word in string
     #!/bin/zsh
     setopt SHWORDSPLIT
     days="Monday Tuesday Wednesday Thursday Friday"
