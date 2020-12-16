@@ -16,3 +16,9 @@
     do
         echo ${day}
     done
+
+    days=(Monday Tuesday Wednesday Thursday Friday)
+    for day in ${days}
+    do
+        echo ${day}
+    done
