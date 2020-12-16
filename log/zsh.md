@@ -3,11 +3,16 @@
 
 ### For word in strings
     #!/bin/zsh
-    setopt shwordsplit
-
+    setopt SHWORDSPLIT
     days="Monday Tuesday Wednesday Thursday Friday"
     for day in ${days}
     do
         echo ${day}
     done
 
+    unsetopt SHWORDSPLIT
+    days="Monday Tuesday Wednesday Thursday Friday"
+    for day in ${days}
+    do
+        echo ${day}
+    done
