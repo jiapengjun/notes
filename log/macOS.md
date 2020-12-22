@@ -72,3 +72,6 @@
 
 ### Run command Parallel
     echo 10 20 30  |xargs -n 1 -P 3 sleep 
+
+### "You Internet connection cann't be shared because it's protected by 802.1x"
+    System Preferences -> Network -> Belkin USB-C LAN -> Advanced -> 802.1x -> disable "Enable automatic connection"
