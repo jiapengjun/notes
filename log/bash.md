@@ -36,17 +36,26 @@
 ### float calculate
     bc <<< "scale=3; 2/3"
 
+### read lines from CLI output
+    while read line
+    do
+        echo $line
+    done < <(cat *.sh)
+
 ### read multiple values from one line
     while IFS=$':' read name _ id gid fullName home shell
     do
         echo $name, $fullName, $home
     done < /etc/passwd
 
-### read lines from multiple files
-    while read line
+### read lines from here document
+    while IFS='%' read -r -a array
     do
-        echo $line
-    done < <(cat *.sh)
+        echo ${array[0]} "is a" ${array[1]} "and" ${array[2]} "years old"
+    done <<- EOF
+    Tom%Male%20
+    Cat%Female%22
+    EOF
 
 ### for in range(n)
     for ((i=1; i<=10; i++)) # variable supported
