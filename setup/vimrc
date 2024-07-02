@@ -1,20 +1,56 @@
 set nocompatible
-" new add here
-set cryptmethod=blowfish2
+filetype off
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'preservim/nerdtree'
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'preservim/tagbar'
+
+Plugin 'Yggdroot/indentLine'
+Plugin 'itchyny/calendar.vim'
+
+Plugin 'Valloric/YouCompleteMe'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+
+noremap <leader>d :NERDTreeToggle<CR>
+noremap <leader>t :TagbarToggle<CR>
+
+
+"
+" Brief help
+" :PluginList       - lists configured plugins
+" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
+" :PluginSearch foo - searches for foo; append `!` to refresh local cache
+" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
+"
+"set cryptmethod=blowfish2
 
 "set autochdir
-set tags+=../tags,../../tags,../../../tags
+set tags=./tags,tags;
 
+"set spell
+"map :w :up
+"map :q :confirm q
+
+set hlsearch
 set incsearch
 set showmatch
 set smartcase
-set ignorecase
 
 set number
 set linebreak
 set scrolloff=2
 
-set hlsearch
 "set background=dark
 
 set hidden
@@ -39,21 +75,22 @@ set timeout
 set timeoutlen=1000
 set ttimeoutlen=100
 
+set wildmenu
+set wildmode=full
+
 set backup
 if &backupdir =~# '^\.,'
-	let &backupdir = "/Users/pengjunjia/Library/Vim/backup," . &backupdir
+	let &backupdir = "/Users/jiapengjun/Library/Vim/backup," . &backupdir
 endif
 
 set swapfile
 if &directory =~# '^\.,'
-    let &directory = "/Users/pengjunjia/Library/Vim/swap," . &directory
+    let &directory = "/Users/jiapengjun/Library/Vim/swap," . &directory
 endif
 
-set wildmenu
-set wildmode=full
 set undofile
 if &undodir =~# '^\.\%(,\|$\)'
-    let &undodir = "/Users/pengjunjia/Library/Vim/undo," . &undodir
+    let &undodir = "/Users/jiapengjun/Library/Vim/undo," . &undodir
 endif
 
 "set gdefault
@@ -63,7 +100,6 @@ filetype plugin indent on
 syntax on
 
 "let mapleader=","
-
 autocmd BufReadPost * if line("'\"") > 0 && line("'\"") <= line("$") | exec "normal g'\"" | endif
 
 augroup vimscript
@@ -81,6 +117,7 @@ autocmd FileType java set foldmethod=syntax
 
 " Python 
 autocmd FileType python set foldmethod=indent
+autocmd FileType python nnoremap <leader>y :0,$!yapf<CR>
 
 " javascript
 function! JavaScriptFold()
