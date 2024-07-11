@@ -1,2 +1,0 @@
-protoc --cpp_out=./ addr.proto
-protoc --python_out=./ addr.proto
